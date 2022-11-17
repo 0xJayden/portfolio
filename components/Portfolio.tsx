@@ -16,11 +16,11 @@ export default function Portfolio() {
           A Marketplace for Events
         </h1>
         <p className="text-gray-300">
-          Create events and mint tickets currently on the Goerli testnet. View
+          {`Create events and mint tickets currently on the Goerli testnet. View
           your profile to upload a profile picture & banner, and see what
           tickets you've purchased. Explore created events on the explore feed
           and engage with them by liking or commenting. Click on any event to
-          view more information about that event.
+          view more information about that event.`}
           <br />
           <br />
           Future features include an integrated marketplace to trade purchased
