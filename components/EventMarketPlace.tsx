@@ -1,8 +1,10 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 import empMobile from "../public/emp-mobile.png";
 import explore from "../public/explore.png";
 
 export default function EventMarketPlace() {
+  const router = useRouter();
   return (
     <>
       <div className="border border-[#5adfaa] rounded p-5">
@@ -33,7 +35,10 @@ export default function EventMarketPlace() {
         </div>
       </div>
 
-      <button className="border rounded border-[#5adfaa] w-1/2 mt-10">
+      <button
+        onClick={() => router.push("https://event-marketplace.vercel.app/")}
+        className="border rounded border-[#5adfaa] w-1/2 mt-10"
+      >
         Link to Project
       </button>
     </>

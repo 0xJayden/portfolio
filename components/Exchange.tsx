@@ -1,7 +1,9 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 import exchange from "../public/exchange.png";
 
 export default function EventMarketPlace() {
+  const router = useRouter();
   return (
     <>
       <div className="border border-[#5adfaa] rounded p-5 relative">
@@ -25,7 +27,12 @@ export default function EventMarketPlace() {
         </div>
       </div>
 
-      <button className="border rounded border-[#5adfaa] w-1/2 mt-10">
+      <button
+        onClick={() =>
+          router.push("https://portfolio-token-exchange.surge.sh/")
+        }
+        className="border rounded border-[#5adfaa] w-1/2 mt-10"
+      >
         Link to Project
       </button>
     </>

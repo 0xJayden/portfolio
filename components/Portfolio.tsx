@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import EventMarketPlace from "./EventMarketPlace";
 import TheShmeeps from "./TheShmeeps";
 import Exchange from "./Exchange";
+import Chat from "./Chat";
 
 export default function Portfolio() {
   useEffect(() => {
@@ -28,6 +29,9 @@ export default function Portfolio() {
       </div>
       <div className="opacity-0 translate-y-20 transition-all duration-1000 blur-sm show-on-scroll">
         <EventMarketPlace />
+      </div>
+      <div className="opacity-0 translate-y-20 transition-all duration-1000 blur-sm show-on-scroll">
+        <Chat />
       </div>
       <div className="opacity-0 translate-y-20 transition-all duration-1000 blur-sm show-on-scroll">
         <TheShmeeps />
