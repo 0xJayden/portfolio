@@ -36,9 +36,7 @@ export default function Home() {
         <div className="opacity-0 translate-y-20 transition-all duration-1000 blur-sm show-on-scroll">
           <Intro />
         </div>
-        <div className="opacity-0 translate-y-20 transition-all duration-1000 blur-sm show-on-scroll">
-          <Portfolio />
-        </div>
+        <Portfolio />
       </main>
     </div>
   );
