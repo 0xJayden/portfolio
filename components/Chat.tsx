@@ -70,7 +70,7 @@ export default function EventMarketPlace() {
           <ArrowRightIcon />
         </div>
       </div>
-      <div className="flex w-full justify-center items-center space-x-2 mt-2">
+      <div className="flex w-full h-3 justify-center items-center space-x-2 mt-2">
         <div
           className={`rounded-full transition-all duration-300 ease-in-out ${
             currentPic === 0 ? "bg-white h-3 w-3" : "bg-gray-500 h-2 w-2"
