@@ -3,7 +3,12 @@ import { useRouter } from "next/router";
 import chat1 from "../public/chat-1.png";
 import chat2 from "../public/chat-2.png";
 import chat3 from "../public/chat-3.png";
-import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
+import {
+  ArrowLeftCircleIcon,
+  ArrowLeftIcon,
+  ArrowRightCircleIcon,
+  ArrowRightIcon,
+} from "@heroicons/react/24/outline";
 import { useState } from "react";
 
 export default function EventMarketPlace() {
@@ -46,20 +51,20 @@ export default function EventMarketPlace() {
           onClick={() => prevPic()}
           className="p-2 w-20 flex items-center transition-all duration-300 ease-in-out"
         >
-          <ArrowLeftIcon />
+          <ArrowLeftCircleIcon className="max-w-[50px]" />
         </div>
         {currentPic === 0 && (
-          <div className="">
+          <div className="max-w-[350px]">
             <Image src={chat1} />
           </div>
         )}
         {currentPic === 1 && (
-          <div className="">
+          <div className="max-w-[350px]">
             <Image src={chat2} />
           </div>
         )}
         {currentPic === 2 && (
-          <div className="">
+          <div className="max-w-[350px]">
             <Image src={chat3} />
           </div>
         )}
@@ -67,7 +72,7 @@ export default function EventMarketPlace() {
           onClick={() => nextPic()}
           className="p-2 flex items-center w-20 transition-all duration-300 ease-in-out"
         >
-          <ArrowRightIcon />
+          <ArrowRightCircleIcon className="max-w-[50px]" />
         </div>
       </div>
       <div className="flex w-full h-3 justify-center items-center space-x-2 mt-2">

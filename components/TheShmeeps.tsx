@@ -30,7 +30,7 @@ export default function EventMarketPlace() {
       </div>
 
       <div className="flex justify-center mt-10">
-        <div className="max-w-[200px]">
+        <div className="max-w-[300px]">
           <Image src={shmeeps} />
         </div>
       </div>
