@@ -51,7 +51,7 @@ export default function EventMarketPlace() {
           onClick={() => prevPic()}
           className="p-2 w-20 flex items-center transition-all duration-300 ease-in-out"
         >
-          <ArrowLeftCircleIcon className="max-w-[50px]" />
+          <ArrowLeftIcon className="max-w-[50px] border rounded border-[#5adfaa] cursor-pointer" />
         </div>
         {currentPic === 0 && (
           <div className="max-w-[350px]">
@@ -72,7 +72,7 @@ export default function EventMarketPlace() {
           onClick={() => nextPic()}
           className="p-2 flex items-center w-20 transition-all duration-300 ease-in-out"
         >
-          <ArrowRightCircleIcon className="max-w-[50px]" />
+          <ArrowRightIcon className="max-w-[50px] border rounded border-[#5adfaa] cursor-pointer" />
         </div>
       </div>
       <div className="flex w-full h-3 justify-center items-center space-x-2 mt-2">
