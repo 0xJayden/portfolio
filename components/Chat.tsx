@@ -3,33 +3,33 @@ import { useRouter } from "next/router";
 import chat1 from "../public/chat-1.png";
 import chat2 from "../public/chat-2.png";
 import chat3 from "../public/chat-3.png";
-import {
-  ArrowLeftCircleIcon,
-  ArrowLeftIcon,
-  ArrowRightCircleIcon,
-  ArrowRightIcon,
-} from "@heroicons/react/24/outline";
 import { useState } from "react";
 
 export default function EventMarketPlace() {
   const [currentPic, setCurrentPic] = useState(0);
+  const [clickedRight, setClickedRight] = useState(false);
+  const [clickedLeft, setClickedLeft] = useState(false);
 
   const router = useRouter();
 
   const nextPic = () => {
+    setClickedRight(true);
     if (currentPic === 2) {
       setCurrentPic(0);
     } else {
       setCurrentPic(currentPic + 1);
     }
+    setTimeout(() => setClickedRight(false), 500);
   };
 
   const prevPic = () => {
+    setClickedLeft(true);
     if (currentPic === 0) {
       setCurrentPic(2);
     } else {
       setCurrentPic(currentPic - 1);
     }
+    setTimeout(() => setClickedLeft(false), 500);
   };
 
   return (
@@ -46,48 +46,78 @@ export default function EventMarketPlace() {
         </p>
       </div>
 
-      <div className="flex justify-center mt-10">
-        <div
-          onClick={() => prevPic()}
-          className="p-2 w-20 flex items-center transition-all duration-300 ease-in-out"
-        >
-          <ArrowLeftIcon className="max-w-[50px] border rounded border-[#5adfaa] cursor-pointer" />
+      <div className="flex relative justify-center mt-10 h-[500px] w-full overflow-hidden">
+        <div className="flex justify-between w-full z-10">
+          <div
+            onClick={() => {
+              if (clickedRight || clickedLeft) return;
+              prevPic();
+            }}
+            className="p-2 flex items-center justify-center transition-all duration-[600] ease-in-out"
+          >
+            <div className="border rounded border-[#5adfaa] cursor-pointer">
+              <div className="rounded-full h-2 w-2 m-3 bg-[#5adfaa]"></div>
+            </div>
+          </div>
+          <div
+            onClick={() => {
+              if (clickedRight || clickedLeft) return;
+              nextPic();
+            }}
+            className="p-2 flex items-center justify-center transition-all duration-[600] ease-in-out"
+          >
+            <div className="border rounded border-[#5adfaa] cursor-pointer">
+              <div className="rounded-full h-2 w-2 m-3 bg-[#5adfaa]"></div>
+            </div>
+          </div>
         </div>
-        {currentPic === 0 && (
-          <div className="max-w-[350px]">
-            <Image src={chat1} />
-          </div>
-        )}
-        {currentPic === 1 && (
-          <div className="max-w-[350px]">
-            <Image src={chat2} />
-          </div>
-        )}
-        {currentPic === 2 && (
-          <div className="max-w-[350px]">
-            <Image src={chat3} />
-          </div>
-        )}
         <div
-          onClick={() => nextPic()}
-          className="p-2 flex items-center w-20 transition-all duration-300 ease-in-out"
+          className={`max-w-[220px] absolute transition-all duration-[500] ease-out ${
+            currentPic === 2
+              ? "opacity-100"
+              : `opacity-0 ${clickedRight && "translate-x-full"} ${
+                  clickedLeft && "-translate-x-full"
+                }`
+          }`}
         >
-          <ArrowRightIcon className="max-w-[50px] border rounded border-[#5adfaa] cursor-pointer" />
+          <Image src={chat3} />
+        </div>
+        <div
+          className={`max-w-[220px] absolute transition-all duration-[500] ease-out ${
+            currentPic === 1
+              ? "opacity-100"
+              : `opacity-0 ${clickedRight && "translate-x-full"} ${
+                  clickedLeft && "-translate-x-full"
+                }`
+          }`}
+        >
+          <Image src={chat1} />
+        </div>
+        <div
+          className={`max-w-[220px] absolute transition-all duration-[500] ease-out ${
+            currentPic === 0
+              ? "opacity-100"
+              : `opacity-0 ${clickedRight && "translate-x-full"} ${
+                  clickedLeft && "-translate-x-full"
+                }`
+          }`}
+        >
+          <Image src={chat2} />
         </div>
       </div>
       <div className="flex w-full h-3 justify-center items-center space-x-2 mt-2">
         <div
-          className={`rounded-full transition-all duration-300 ease-in-out ${
+          className={`rounded-full transition-all duration-[500] ease-in-out ${
             currentPic === 0 ? "bg-white h-3 w-3" : "bg-gray-500 h-2 w-2"
           }`}
         ></div>
         <div
-          className={`rounded-full transition-all duration-300 ease-in-out ${
+          className={`rounded-full transition-all duration-[500] ease-in-out ${
             currentPic === 1 ? "bg-white h-3 w-3" : "bg-gray-500 h-2 w-2"
           }`}
         ></div>
         <div
-          className={`rounded-full transition-all duration-300 ease-in-out ${
+          className={`rounded-full transition-all duration-[500] ease-in-out ${
             currentPic === 2 ? "bg-white h-3 w-3" : "bg-gray-500 h-2 w-2"
           }`}
         ></div>
