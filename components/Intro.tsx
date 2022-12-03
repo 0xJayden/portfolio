@@ -5,7 +5,7 @@ export default function Intro() {
   return (
     <div className="mt-20 relative bg-transparent">
       <div className="max-w-[600px]">
-        <h1 className="text-[60px] mb-20 font-semibold leading-[85px]">
+        <h1 className="text-[60px] mb-20 font-semibold">
           Full-Stack <br /> <span className="text-[#5adfaa]">Web</span>{" "}
           Developer
         </h1>
@@ -23,7 +23,7 @@ export default function Intro() {
           </div>
         </div>
       </div>
-      <div className="max-w-[350px] absolute right-0 top-0 -z-10 opacity-60">
+      <div className="max-w-[450px] absolute right-0 top-0 -z-10 opacity-60">
         <Image src={jay} />
       </div>
     </div>
