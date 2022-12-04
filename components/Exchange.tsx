@@ -17,8 +17,18 @@ export default function EventMarketPlace() {
             sure you are connected to the Rinkeby network and have ETH on the
             Rinkeby network before attempting to trade. You can get some`}
             <span>
-              <a href="https://faucet.rinkeby.io">here</a>.
+              <a
+                className="text-purple-500 cursor-pointer"
+                href="https://faucet.rinkeby.io"
+              >
+                {" "}
+                here
+              </a>
+              .
             </span>
+            <br />
+            <br />
+            {`* Needs to be redeployed to Goerli Testnet since Rinkeby is deprecated.`}
           </p>
         </div>
 

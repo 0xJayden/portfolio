@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Intro from "../components/Intro";
 import Portfolio from "../components/Portfolio";
 import { useEffect } from "react";
+import Socials from "../components/Socials";
 
 export default function Home() {
   useEffect(() => {
@@ -37,6 +38,14 @@ export default function Home() {
           <Intro />
         </div>
         <Portfolio />
+        <div className="opacity-0 translate-y-20 transition-all duration-1000 blur-sm show-on-scroll">
+          <Socials />
+        </div>
+        <div className="flex justify-center mt-5">
+          <a href="#home">
+            <p>Back To Top</p>
+          </a>
+        </div>
       </main>
     </div>
   );

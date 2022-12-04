@@ -42,7 +42,7 @@ export default function EventMarketPlace() {
           </h1>
           <p className="text-gray-300">
             Created with React.js, Next.js, tRPC, Tailwind CSS, Prisma, &
-            Planetscale.
+            Planetscale. A complete type safe application.
           </p>
           <p className="text-gray-300 mt-5">
             {`Sign in without creating a username and password using Next Auth, create/delete conversations

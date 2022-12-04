@@ -27,6 +27,9 @@ export default function EventMarketPlace() {
               like to unstake and click Claim & Unstake; your NFTs and the
               tokens you earned will be sent to your wallet. If you'd like to
               only claim the tokens earned, click Claim Tokens.`}
+            <br />
+            <br />
+            {`* Needs to be redeployed to Goerli Testnet since Rinkeby is deprecated.`}
           </p>
         </div>
 
