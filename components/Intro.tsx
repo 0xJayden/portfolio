@@ -12,7 +12,7 @@ export default function Intro() {
         <div className="w-full flex justify-center">
           <div className="bg-gray-800 relative w-11/12 h-[270px] sm:h-[200px] opacity-80 rounded border border-[#5adfaa]">
             <div className="absolute p-5 inset-0 text-lg text-gray-200 shadow-xl">
-              <h1 className="text-sm text-[#5adfaa] mb-2">the gist</h1>
+              <h1 className="text-[#5adfaa] mb-2">the gist</h1>
               <p>
                 Focused on creating digital experiences that provide as much
                 value as possible to everyone involved. <br />
