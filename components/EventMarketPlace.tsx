@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import empMobile from "../public/emp-mobile.png";
 import explore from "../public/explore.png";
+import emp from "../public/event-market-place.png";
 
 export default function EventMarketPlace() {
   const router = useRouter();
@@ -14,6 +15,9 @@ export default function EventMarketPlace() {
             A Marketplace for Events
           </h1>
           <p className="text-gray-300">
+            {`Created with React.js, Next.js, Tailwind CSS, MongoDB, & Web3.js. Soon to be migrated to tRPC, Prisma & Planetscale from MongoDB and from Web3 to Web2 with Web3 capabilities.`}
+            <br />
+            <br />
             {`Create events and mint tickets currently on the Goerli testnet. View
       your profile to upload a profile picture & banner, and see what
       tickets you've purchased. Explore created events on the explore feed
@@ -41,6 +45,9 @@ export default function EventMarketPlace() {
         >
           Link to Project
         </button>
+      </div>
+      <div className="mt-10 hidden sm:flex">
+        <Image src={emp} />
       </div>
       <button
         onClick={() => router.push("https://event-marketplace.vercel.app/")}

@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import chat1 from "../public/chat-1.png";
 import chat2 from "../public/chat-2.png";
 import chat3 from "../public/chat-3.png";
+import chat4 from "../public/chat-app-desktop.png";
 import { useState } from "react";
 
 export default function EventMarketPlace() {
@@ -35,7 +36,7 @@ export default function EventMarketPlace() {
   return (
     <>
       <div className="sm:flex">
-        <div className="border border-[#5adfaa] rounded p-5 relative sm:max-w-[500px]">
+        <div className="border border-[#5adfaa] rounded p-5 relative sm:max-w-[500px] sm:max-h-[350px]">
           <h1 className="text-3xl mb-5 ">Chat App</h1>
           <h1 className="text-xl mb-5 border-b text-red-400 border-[#5adfaa]">
             You guessed it, a chat app.
@@ -44,14 +45,14 @@ export default function EventMarketPlace() {
             Created with React.js, Next.js, tRPC, Tailwind CSS, Prisma, &
             Planetscale. A complete type safe application.
           </p>
-          <p className="text-gray-300 mt-5">
+          <p className="text-gray-300 mt-5 mb-5">
             {`Sign in without creating a username and password using Next Auth, create/delete conversations
            with other users, unread indicators, conversations sorted in most recent message sent, and set
             your profile picture and name.`}
           </p>
         </div>
         <div className="sm:flex sm:flex-col sm:w-full">
-          <div className="flex relative justify-center mt-10 h-[500px] w-full overflow-hidden">
+          <div className="flex relative justify-center mt-10 sm:mt-0 h-[500px] w-full overflow-hidden">
             <div className="flex justify-between w-full max-w-[400px] z-10">
               <div
                 onClick={() => {
@@ -135,6 +136,9 @@ export default function EventMarketPlace() {
         >
           Link to Project
         </button>
+      </div>
+      <div className="mt-10 hidden sm:flex sm:justify-center rounded p-10 bg-gradient-to-tr from-gray-600 to-gray-300">
+        <Image src={chat4} />
       </div>
       <button
         onClick={() => router.push("https://chat-app-hjmk.vercel.app")}

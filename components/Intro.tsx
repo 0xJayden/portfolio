@@ -10,7 +10,7 @@ export default function Intro() {
           Developer
         </h1>
         <div className="w-full flex justify-center">
-          <div className="bg-gray-800 relative w-11/12 h-[270px] opacity-80 rounded border border-[#5adfaa]">
+          <div className="bg-gray-800 relative w-11/12 h-[270px] sm:h-[200px] opacity-80 rounded border border-[#5adfaa]">
             <div className="absolute p-5 inset-0 text-lg text-gray-200 shadow-xl">
               <h1 className="text-sm text-[#5adfaa] mb-2">the gist</h1>
               <p>

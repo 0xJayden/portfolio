@@ -17,6 +17,9 @@ export default function EventMarketPlace() {
             NFT project with the ability to stake & earn tokens
           </h1>
           <p className="text-gray-300">
+            {`Created with React.js, Bootstrap, & Web3.js.`}
+            <br />
+            <br />
             {` Select up to 3 NFTs to mint. After, in the Staking section, you
               may select the NFTs you've just minted to be staked. Once staked,
               you immediately start earning Shmeep Tokens until you choose to

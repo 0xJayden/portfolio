@@ -13,6 +13,9 @@ export default function EventMarketPlace() {
             Crypto currency exchange
           </h1>
           <p className="text-gray-300">
+            {`Created with React.js, Redux, Bootstrap & Web3.js.`}
+            <br />
+            <br />
             {`Trade ETH for Portfolio Tokens (PRT) on the Rinkeby network. Make
             sure you are connected to the Rinkeby network and have ETH on the
             Rinkeby network before attempting to trade. You can get some`}
