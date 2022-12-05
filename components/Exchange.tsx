@@ -34,18 +34,16 @@ export default function EventMarketPlace() {
             {`* Needs to be redeployed to Goerli Testnet since Rinkeby is deprecated.`}
           </p>
         </div>
-
-        <div className="flex justify-center sm:w-full mt-10 sm:mt-0">
+        <div className="flex justify-center items-center my-5 sm:w-full sm:mt-0">
           <div className="sm:max-w-[600px]">
             <Image src={exchange} />
           </div>
         </div>
-
         <button
           onClick={() =>
             router.push("https://portfolio-token-exchange.surge.sh/")
           }
-          className="border sm:hidden rounded border-[#5adfaa] w-1/2 mt-10 max-w-[200px] transition-all duration-200 ease-out hover:bg-[#5adfaa] hover:text-gray-700"
+          className="border sm:hidden rounded border-[#5adfaa] px-2 transition-all duration-200 ease-out hover:bg-[#5adfaa] hover:text-gray-700"
         >
           Link to Project
         </button>
@@ -54,7 +52,7 @@ export default function EventMarketPlace() {
         onClick={() =>
           router.push("https://portfolio-token-exchange.surge.sh/")
         }
-        className="border sm:inline hidden rounded border-[#5adfaa] w-1/2 mt-10 max-w-[200px] transition-all duration-200 ease-out hover:bg-[#5adfaa] hover:text-gray-700"
+        className="border sm:inline hidden rounded border-[#5adfaa] px-2 mt-2 transition-all duration-200 ease-out hover:bg-[#5adfaa] hover:text-gray-700"
       >
         Link to Project
       </button>

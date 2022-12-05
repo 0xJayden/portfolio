@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Intro() {
   return (
-    <div className="mt-20 relative bg-transparent">
+    <div className="mt-10 sm:mt-20 relative bg-transparent">
       <div className="max-w-[600px]">
         <h1 className="text-[60px] mb-20 font-semibold">
           Full-Stack <br /> <span className="text-[#5adfaa]">Web</span>{" "}

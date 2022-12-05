@@ -7,7 +7,7 @@ export default function Socials() {
   return (
     <div
       id="socials"
-      className="flex space-x-20 items-center justify-center p-5 mt-5 bg-gradient-to-tl rounded from-gray-900 to-gray-600"
+      className="flex space-x-20 items-center justify-center p-5 mt-10 bg-gradient-to-tl rounded from-gray-900 to-gray-600"
     >
       <a href="https://github.com/0xJayden">
         <Image height={"50px"} width={"50px"} src={github} />

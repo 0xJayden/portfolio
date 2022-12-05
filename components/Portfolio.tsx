@@ -23,9 +23,9 @@ export default function Portfolio() {
   return (
     <div
       id="portfolio"
-      className="flex flex-col mt-[100px] sm:mt-[200px] space-y-10"
+      className="flex flex-col mt-[100px] sm:mt-[200px] space-y-20"
     >
-      <div className="flex justify-center mb-10 opacity-0 translate-y-20 transition-all duration-1000 blur-sm show-on-scroll">
+      <div className="flex justify-center items-center opacity-0 translate-y-20 transition-all duration-1000 blur-sm show-on-scroll">
         <h1 className="border-b border-[#5adfaa] text-[40px] font-light">
           Portfolio
         </h1>

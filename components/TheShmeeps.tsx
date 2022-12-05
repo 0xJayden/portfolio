@@ -8,9 +8,9 @@ export default function EventMarketPlace() {
   return (
     <>
       <div className="sm:flex">
-        <div className="border border-[#5adfaa] rounded p-5 relative sm:max-w-[500px]">
-          <h1 className="text-3xl mb-5 ">The Shmeeps</h1>
-          <div className="">
+        <div className="border border-[#5adfaa] rounded p-5 pt-2 relative sm:max-w-[500px]">
+          <div className="flex items-center">
+            <h1 className="text-3xl mb-5 mr-5 sm:mr-10 ">The Shmeeps</h1>
             <Image height="100px" width="100px" src={shmeep} />
           </div>
           <h1 className="text-xl mb-5 border-b text-yellow-400 border-[#5adfaa]">
@@ -35,26 +35,27 @@ export default function EventMarketPlace() {
             {`* Needs to be redeployed to Goerli Testnet since Rinkeby is deprecated.`}
           </p>
         </div>
-
-        <div className="flex justify-center sm:w-full mt-10">
-          <div className="max-w-[300px]">
+        <div className="flex justify-center w-full sm:mt-0 my-5">
+          <div className="max-w-[300px] flex justify-center sm:w-full">
             <Image src={shmeeps} />
           </div>
         </div>
-
         <button
           onClick={() => router.push("https://theshmeeps.surge.sh/")}
-          className="border sm:hidden rounded border-[#5adfaa] w-1/2 mt-10 max-w-[200px] transition-all duration-200 ease-out hover:bg-[#5adfaa] hover:text-gray-700"
+          className="border sm:hidden rounded border-[#5adfaa] px-2 transition-all duration-200 ease-out hover:bg-[#5adfaa] hover:text-gray-700"
         >
           Link to Project
         </button>
       </div>
       <button
         onClick={() => router.push("https://theshmeeps.surge.sh/")}
-        className="border hidden sm:inline rounded border-[#5adfaa] w-1/2 mt-10 max-w-[200px] transition-all duration-200 ease-out hover:bg-[#5adfaa] hover:text-gray-700"
+        className="border hidden sm:inline rounded border-[#5adfaa] px-2 mt-2 transition-all duration-200 ease-out hover:bg-[#5adfaa] hover:text-gray-700"
       >
         Link to Project
       </button>
+      <div className="w-full mt-20 flex justify-center">
+        <div className="border-t border-[#5adfaa] w-20"></div>
+      </div>
     </>
   );
 }

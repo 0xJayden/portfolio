@@ -36,23 +36,31 @@ export default function EventMarketPlace() {
   return (
     <>
       <div className="sm:flex">
-        <div className="border border-[#5adfaa] rounded p-5 relative sm:max-w-[500px] sm:max-h-[350px]">
-          <h1 className="text-3xl mb-5 ">Chat App</h1>
-          <h1 className="text-xl mb-5 border-b text-red-400 border-[#5adfaa]">
-            You guessed it, a chat app.
-          </h1>
-          <p className="text-gray-300">
-            Created with React.js, Next.js, tRPC, Tailwind CSS, Prisma, &
-            Planetscale. A complete type safe application.
-          </p>
-          <p className="text-gray-300 mt-5 mb-5">
-            {`Sign in without creating a username and password using Next Auth, create/delete conversations
+        <div className="flex flex-col space-y-2 sm:max-h-[350px] sm:max-w-[600px]">
+          <div className="border border-[#5adfaa] rounded p-5 relative">
+            <h1 className="text-3xl mb-5 ">Chat App</h1>
+            <h1 className="text-xl mb-5 border-b text-red-400 border-[#5adfaa]">
+              You guessed it, a chat app.
+            </h1>
+            <p className="text-gray-300">
+              Created with React.js, Next.js, tRPC, Tailwind CSS, Prisma, &
+              Planetscale. A complete type safe application.
+            </p>
+            <p className="text-gray-300 mt-5 mb-5">
+              {`Sign in without creating a username and password using Next Auth, create/delete conversations
            with other users, unread indicators, conversations sorted in most recent message sent, and set
             your profile picture and name.`}
-          </p>
+            </p>
+          </div>
+          <button
+            onClick={() => router.push("https://chat-app-hjmk.vercel.app")}
+            className="border hidden sm:inline rounded border-[#5adfaa] px-2 w-fit transition-all duration-200 ease-out hover:bg-[#5adfaa] hover:text-gray-700"
+          >
+            Link to Project
+          </button>
         </div>
         <div className="sm:flex sm:flex-col sm:w-full">
-          <div className="flex relative justify-center mt-10 sm:mt-0 h-[500px] w-full overflow-hidden">
+          <div className="flex relative justify-center mt-5 sm:mt-0 h-[500px] w-full overflow-hidden">
             <div className="flex justify-between w-full max-w-[400px] z-10">
               <div
                 onClick={() => {
@@ -132,20 +140,19 @@ export default function EventMarketPlace() {
 
         <button
           onClick={() => router.push("https://chat-app-hjmk.vercel.app")}
-          className="border sm:hidden rounded border-[#5adfaa] w-1/2 mt-10 max-w-[200px] transition-all duration-200 ease-out hover:bg-[#5adfaa] hover:text-gray-700"
+          className="border mb-10 sm:hidden rounded border-[#5adfaa] px-2 mt-5 transition-all duration-200 ease-out hover:bg-[#5adfaa] hover:text-gray-700"
         >
           Link to Project
         </button>
       </div>
-      <div className="mt-10 hidden sm:flex sm:justify-center rounded p-10 bg-gradient-to-tr from-gray-600 to-gray-300">
-        <Image src={chat4} />
+      <div className="p-10 hidden sm:flex">
+        <div className="hidden sm:flex sm:justify-center rounded p-10 bg-gradient-to-tr from-gray-700 to-gray-500">
+          <Image src={chat4} />
+        </div>
       </div>
-      <button
-        onClick={() => router.push("https://chat-app-hjmk.vercel.app")}
-        className="border hidden sm:inline rounded border-[#5adfaa] w-1/2 mt-10 max-w-[200px] transition-all duration-200 ease-out hover:bg-[#5adfaa] hover:text-gray-700"
-      >
-        Link to Project
-      </button>
+      <div className="w-full mt-10 flex justify-center">
+        <div className="border-t border-[#5adfaa] w-20"></div>
+      </div>
     </>
   );
 }
