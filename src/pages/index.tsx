@@ -1,8 +1,8 @@
+import { useEffect } from "react";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Intro from "../components/Intro";
 import Portfolio from "../components/Portfolio";
-import { useEffect } from "react";
 import Socials from "../components/Socials";
 
 export default function Home() {
@@ -29,7 +29,7 @@ export default function Home() {
           name="description"
           content="Jayden Davila's Developer Portfolio"
         />
-        <link rel="icon" href="/jd.png" />
+        <link rel="icon" href="/jd.ico" />
       </Head>
       <Navbar />
 
