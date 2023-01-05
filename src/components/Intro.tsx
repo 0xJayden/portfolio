@@ -1,4 +1,4 @@
-import jay from "../public/jay.jpg";
+import jay from "../assets/jay.jpg";
 import Image from "next/image";
 
 export default function Intro() {

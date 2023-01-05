@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
-import exchange from "../public/exchange.png";
+import exchange from "../assets/exchange.png";
 
 export default function EventMarketPlace() {
   const router = useRouter();

@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
-import chat1 from "../public/chat-1.png";
-import chat2 from "../public/chat-2.png";
-import chat3 from "../public/chat-3.png";
-import chat4 from "../public/chat-app-desktop.png";
+import chat1 from "../assets/chat-1.png";
+import chat2 from "../assets/chat-2.png";
+import chat3 from "../assets/chat-3.png";
+import chat4 from "../assets/chat-app-desktop.png";
 import { useState } from "react";
 
 export default function EventMarketPlace() {

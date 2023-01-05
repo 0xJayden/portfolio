@@ -1,7 +1,7 @@
 import Image from "next/image";
-import github from "../public/github.png";
-import linkedin from "../public/linkedin.png";
-import twitter from "../public/twitter-logo.png";
+import github from "../assets/github.png";
+import linkedin from "../assets/linkedin.png";
+import twitter from "../assets/twitter-logo.png";
 
 export default function Socials() {
   return (

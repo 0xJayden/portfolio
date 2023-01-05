@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
-import shmeep from "../public/shmeep1.png";
-import shmeeps from "../public/shmeeps.png";
+import shmeep from "../assets/shmeep1.png";
+import shmeeps from "../assets/shmeeps.png";
 
 export default function EventMarketPlace() {
   const router = useRouter();
