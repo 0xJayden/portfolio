@@ -11,7 +11,7 @@ export default function EventMarketPlace() {
         <div className="border border-[#5adfaa] rounded p-5 pt-2 relative sm:max-w-[500px]">
           <div className="flex items-center">
             <h1 className="text-3xl mb-5 mr-5 sm:mr-10 ">The Shmeeps</h1>
-            <Image height="100px" width="100px" src={shmeep} />
+            <Image alt="" src={shmeep} />
           </div>
           <h1 className="text-xl mb-5 border-b text-yellow-400 border-[#5adfaa]">
             NFT project with the ability to stake & earn tokens
@@ -37,7 +37,7 @@ export default function EventMarketPlace() {
         </div>
         <div className="flex justify-center w-full sm:mt-0 my-5">
           <div className="max-w-[300px] flex justify-center sm:w-full">
-            <Image src={shmeeps} />
+            <Image alt="" src={shmeeps} />
           </div>
         </div>
         <button

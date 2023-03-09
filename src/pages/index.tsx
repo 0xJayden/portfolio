@@ -59,7 +59,7 @@ export default function Home() {
 
         <Image
           alt="bg"
-          className="absolute sm:right-0 max-w-[450px] border-[#a35adf] sm:brightness-75 md:brightness-90 border p-1 transition-all duration-300 ease-in-out top-20 w-10/12 brightness-[.6] rounded"
+          className="absolute animate-dropIn sm:right-0 max-w-[450px] border-[#a35adf] sm:brightness-75 md:brightness-90 border p-1 transition-all duration-300 ease-in-out top-20 w-10/12 brightness-[.6] rounded"
           src={jay}
         />
         <Intro />
