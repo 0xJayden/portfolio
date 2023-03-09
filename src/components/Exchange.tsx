@@ -36,7 +36,7 @@ export default function EventMarketPlace() {
         </div>
         <div className="flex justify-center items-center my-5 sm:w-full sm:mt-0">
           <div className="sm:max-w-[600px]">
-            <Image src={exchange} />
+            <Image alt="" src={exchange} />
           </div>
         </div>
         <button

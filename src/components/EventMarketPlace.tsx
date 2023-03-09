@@ -33,10 +33,10 @@ export default function EventMarketPlace() {
 
         <div className="flex justify-center mt-7 sm:mt-0 sm:w-full">
           <div className="max-w-[130px] sm:max-w-[200px] -rotate-12">
-            <Image src={empMobile} />
+            <Image alt="" src={empMobile} />
           </div>
           <div className="max-w-[130px] sm:max-w-[200px] rotate-12">
-            <Image src={explore} />
+            <Image alt="" src={explore} />
           </div>
         </div>
         <button
@@ -53,7 +53,7 @@ export default function EventMarketPlace() {
         Link to Project
       </button>
       <div className="p-20 pt-10 hidden sm:flex">
-        <Image src={emp} />
+        <Image alt="" src={emp} />
       </div>
       <div className="w-full flex justify-center">
         <div className="border-t border-[#5adfaa] w-20"></div>

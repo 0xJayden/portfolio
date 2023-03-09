@@ -94,7 +94,7 @@ export default function EventMarketPlace() {
                     }`
               }`}
             >
-              <Image src={chat3} />
+              <Image alt="" src={chat3} />
             </div>
             <div
               className={`max-w-[220px] absolute transition-all duration-[500] ease-out ${
@@ -105,7 +105,7 @@ export default function EventMarketPlace() {
                     }`
               }`}
             >
-              <Image src={chat1} />
+              <Image alt="" src={chat1} />
             </div>
             <div
               className={`max-w-[220px] absolute transition-all duration-[500] ease-out ${
@@ -116,7 +116,7 @@ export default function EventMarketPlace() {
                     }`
               }`}
             >
-              <Image src={chat2} />
+              <Image alt="" src={chat2} />
             </div>
           </div>
           <div className="flex w-full h-3 justify-center items-center space-x-2 mt-2">
@@ -147,7 +147,7 @@ export default function EventMarketPlace() {
       </div>
       <div className="p-10 hidden sm:flex">
         <div className="hidden sm:flex sm:justify-center rounded p-10 bg-gradient-to-tr from-gray-700 to-gray-500">
-          <Image src={chat4} />
+          <Image alt="" src={chat4} />
         </div>
       </div>
       <div className="w-full mt-10 flex justify-center">

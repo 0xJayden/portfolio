@@ -37,7 +37,7 @@ export default function BillSplit() {
         </div>
         <div className="flex justify-center w-full sm:mt-0 my-5">
           <div className="max-w-[300px] flex justify-center sm:w-full">
-            <Image className="rounded-lg" src={billSplit1} />
+            <Image alt="" className="rounded-lg" src={billSplit1} />
           </div>
         </div>
         <button
