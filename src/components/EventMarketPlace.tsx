@@ -9,7 +9,7 @@ export default function EventMarketPlace() {
   return (
     <>
       <div className="sm:flex">
-        <div className="border border-[#5adfaa] rounded p-5 sm:max-w-[600px]">
+        <div className="border border-[#5adfaa] rounded-lg p-5 sm:max-w-[600px]">
           <h1 className="text-3xl mb-5 ">Event Marketplace</h1>
           <h1 className="text-xl mb-5 border-b text-blue-400 border-[#5adfaa]">
             A Marketplace for Events

@@ -23,7 +23,7 @@ module.exports = {
             transform: "translateY(20px)",
             opacity: "0",
           },
-          "80%": { transform: "translateY(20px)", opacity: "0" },
+          "50%": { transform: "translateY(20px)", opacity: "0" },
           "100%": {
             transform: "translateY(0px)",
             opacity: "1",
@@ -34,7 +34,18 @@ module.exports = {
             transform: "translateY(-20px)",
             opacity: "0",
           },
-          "75%": { transform: "translateY(-20px)", opacity: "0" },
+          "50%": { transform: "translateY(-20px)", opacity: "0" },
+          "100%": {
+            transform: "translateY(0px)",
+            opacity: "1",
+          },
+        },
+        fadeUp2: {
+          "0%": {
+            transform: "translateY(-20px)",
+            opacity: "0",
+          },
+          "50%": { transform: "translateY(-20px)", opacity: "0" },
           "100%": {
             transform: "translateY(0px)",
             opacity: "1",
@@ -44,9 +55,12 @@ module.exports = {
       animation: {
         slide: "slide 1s ease-out",
         show: "show 1s ease-out",
-        dropIn: "dropIn 1500ms ease-in-out",
-        fadeDown: "fadeDown 2s ease-in-out",
-        fadeUp: "fadeUp 2500ms ease-in-out",
+        dropIn: "dropIn 1200ms ease-in-out",
+        fadeDown: "fadeDown 1800ms ease-in-out",
+        fadeUp: "fadeUp 2000ms ease-in-out",
+        fadeUp2: "fadeUp2 1000ms ease-in-out",
+        fadeUp3: "fadeUp2 1200ms ease-in-out",
+        fadeUp4: "fadeUp2 1400ms ease-in-out",
       },
     },
   },

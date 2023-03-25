@@ -37,7 +37,7 @@ export default function EventMarketPlace() {
     <>
       <div className="sm:flex">
         <div className="flex flex-col space-y-2 sm:max-h-[350px] sm:max-w-[600px]">
-          <div className="border border-[#5adfaa] rounded p-5 relative">
+          <div className="border border-[#5adfaa] rounded-lg p-5 relative">
             <h1 className="text-3xl mb-5 ">Chat App</h1>
             <h1 className="text-xl mb-5 border-b text-red-400 border-[#5adfaa]">
               You guessed it, a chat app.
@@ -146,7 +146,7 @@ export default function EventMarketPlace() {
         </button>
       </div>
       <div className="p-10 hidden sm:flex">
-        <div className="hidden sm:flex sm:justify-center rounded p-10 bg-gradient-to-tr from-gray-700 to-gray-500">
+        <div className="hidden sm:flex sm:justify-center">
           <Image alt="" src={chat4} />
         </div>
       </div>

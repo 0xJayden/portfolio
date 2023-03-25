@@ -11,7 +11,7 @@ export default function BillSplit() {
     <>
       <div className="sm:flex">
         <div className="flex flex-col sm:max-h-[350px] sm:max-w-[600px]">
-          <div className="border border-[#5adfaa] rounded p-5 relative">
+          <div className="border border-[#5adfaa] rounded-lg p-5 relative">
             <h1 className="text-3xl mb-5">Bill Split App</h1>
             <h1 className="text-xl mb-5 border-b text-cyan-500 border-[#5adfaa]">
               Split the bill with your peeps.
