@@ -13,11 +13,11 @@ export default function Navbar() {
       {/* <div className="flex space-x-2 items-center"> */}
       <Image
         onClick={() => router.push("/")}
-        className="max-w-[30px] cursor-pointer"
+        className="max-w-[30px] cursor-pointer animate-fadeRight"
         src={jd2}
         alt=""
       />
-      <p>Jayden Davila</p>
+      <p className="animate-fadeLeft">Jayden Davila</p>
       {/* </div> */}
       {/* <ul className="flex space-x-4 sm:space-x-10">
         <li className="hover:text-[#5adfaa] cursor-pointer transition-all duration-300 ease-in-out">

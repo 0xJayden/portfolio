@@ -1,9 +1,4 @@
 import { useEffect } from "react";
-import EventMarketPlace from "./EventMarketPlace";
-import TheShmeeps from "./TheShmeeps";
-import Exchange from "./Exchange";
-import Chat from "./Chat";
-import BillSplit from "./BillSplit";
 import Image, { StaticImageData } from "next/image";
 import blockchain from "../assets/blockchain.png";
 import app from "../assets/app.png";
@@ -22,7 +17,7 @@ const Section = ({ heading, subHeading, src, page }: SectionProps) => {
 
   return (
     <div
-      className={`rounded-lg relative w-full space-y-5 z-10 flex flex-col items-center justify-between p-5 border border-[#a35adf] show-on-scroll ${
+      className={`rounded-lg relative opacity-0 w-full space-y-5 z-10 flex flex-col items-center justify-between p-5 border border-[#a35adf] show-on-scroll ${
         page === "/web3" && "web3"
       } ${page === "/apps" && "apps"} ${page === "/websites" && "websites"}`}
     >
@@ -57,17 +52,17 @@ export default function Portfolio() {
           entry.isIntersecting &&
           entry.target.classList.contains("web3")
         ) {
-          entry.target.classList.add("animate-fadeUp2");
+          entry.target.classList.add("animate-fadeUp2", "opacity-100");
         } else if (
           entry.isIntersecting &&
           entry.target.classList.contains("apps")
         ) {
-          entry.target.classList.add("animate-fadeUp3");
+          entry.target.classList.add("animate-fadeUp3", "opacity-100");
         } else if (
           entry.isIntersecting &&
           entry.target.classList.contains("websites")
         ) {
-          entry.target.classList.add("animate-fadeUp4");
+          entry.target.classList.add("animate-fadeUp4", "opacity-100");
         }
       });
     });

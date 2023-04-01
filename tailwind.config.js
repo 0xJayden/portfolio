@@ -37,7 +37,6 @@ module.exports = {
           "50%": { transform: "translateY(-20px)", opacity: "0" },
           "100%": {
             transform: "translateY(0px)",
-            opacity: "1",
           },
         },
         fadeUp2: {
@@ -48,7 +47,26 @@ module.exports = {
           "50%": { transform: "translateY(-20px)", opacity: "0" },
           "100%": {
             transform: "translateY(0px)",
-            opacity: "1",
+          },
+        },
+        fadeRight: {
+          "0%": {
+            transform: "translateX(-20px)",
+            opacity: "0",
+          },
+          "50%": { transform: "translateX(-20px)", opacity: "0" },
+          "100%": {
+            transform: "translateX(0px)",
+          },
+        },
+        fadeLeft: {
+          "0%": {
+            transform: "translateX(20px)",
+            opacity: "0",
+          },
+          "50%": { transform: "translateX(20px)", opacity: "0" },
+          "100%": {
+            transform: "translateX(0px)",
           },
         },
       },
@@ -61,6 +79,8 @@ module.exports = {
         fadeUp2: "fadeUp2 1000ms ease-in-out",
         fadeUp3: "fadeUp2 1200ms ease-in-out",
         fadeUp4: "fadeUp2 1400ms ease-in-out",
+        fadeRight: "fadeRight 1500ms ease-in-out",
+        fadeLeft: "fadeLeft 1900ms ease-in-out",
       },
     },
   },

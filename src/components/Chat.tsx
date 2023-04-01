@@ -4,7 +4,7 @@ import chat1 from "../assets/chat-1.png";
 import chat2 from "../assets/chat-2.png";
 import chat3 from "../assets/chat-3.png";
 import chat4 from "../assets/chat-app-desktop.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function EventMarketPlace() {
   const [currentPic, setCurrentPic] = useState(0);
@@ -33,10 +33,43 @@ export default function EventMarketPlace() {
     setTimeout(() => setClickedLeft(false), 500);
   };
 
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (
+          entry.isIntersecting &&
+          !entry.target.classList.contains("info") &&
+          !entry.target.classList.contains("pic1") &&
+          !entry.target.classList.contains("pic2")
+        ) {
+          entry.target.classList.add("show");
+        } else if (
+          entry.isIntersecting &&
+          entry.target.classList.contains("info")
+        ) {
+          entry.target.classList.add("animate-fadeUp2", "opacity-100");
+        } else if (
+          entry.isIntersecting &&
+          entry.target.classList.contains("pic1")
+        ) {
+          entry.target.classList.add("animate-fadeUp3", "opacity-100");
+        } else if (
+          entry.isIntersecting &&
+          entry.target.classList.contains("pic2")
+        ) {
+          entry.target.classList.add("animate-fadeUp4", "opacity-100");
+        }
+      });
+    });
+
+    const elements = document.querySelectorAll(".show-on-scroll");
+    elements.forEach((el) => observer.observe(el));
+  }, []);
+
   return (
     <>
       <div className="sm:flex">
-        <div className="flex flex-col space-y-2 sm:max-h-[350px] sm:max-w-[600px]">
+        <div className="flex show-on-scroll info opacity-0 flex-col space-y-2 sm:max-h-[350px] sm:max-w-[600px]">
           <div className="border border-[#5adfaa] rounded-lg p-5 relative">
             <h1 className="text-3xl mb-5 ">Chat App</h1>
             <h1 className="text-xl mb-5 border-b text-red-400 border-[#5adfaa]">
@@ -59,7 +92,7 @@ export default function EventMarketPlace() {
             Link to Project
           </button>
         </div>
-        <div className="sm:flex sm:flex-col sm:w-full">
+        <div className="sm:flex sm:flex-col show-on-scroll opacity-0 pic1 sm:w-full">
           <div className="flex relative justify-center mt-5 sm:mt-0 h-[500px] w-full overflow-hidden">
             <div className="flex justify-between w-full max-w-[400px] z-10">
               <div
@@ -140,12 +173,12 @@ export default function EventMarketPlace() {
 
         <button
           onClick={() => router.push("https://chat-app-hjmk.vercel.app")}
-          className="border mb-10 sm:hidden rounded border-[#5adfaa] px-2 mt-5 transition-all duration-200 ease-out hover:bg-[#5adfaa] hover:text-gray-700"
+          className="border show-on-scroll pic1 opacity-0 mb-10 sm:hidden rounded border-[#5adfaa] px-2 mt-5 transition-all duration-200 ease-out hover:bg-[#5adfaa] hover:text-gray-700"
         >
           Link to Project
         </button>
       </div>
-      <div className="p-10 hidden sm:flex">
+      <div className="p-10 show-on-scroll pic2 opacity-0 hidden sm:flex">
         <div className="hidden sm:flex sm:justify-center">
           <Image alt="" src={chat4} />
         </div>
