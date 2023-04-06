@@ -63,11 +63,11 @@ export default function BillSplit() {
           </div>
           <button
             onClick={() =>
-              router.push("https://github.com/0xJayden/bill-split-app")
+              router.push("https://testflight.apple.com/join/mDj56o06")
             }
             className="border hidden sm:inline w-fit rounded border-[#5adfaa] px-2 mt-2 transition-all duration-200 ease-out hover:bg-[#5adfaa] hover:text-gray-700"
           >
-            Link to Project
+            Link to App
           </button>
         </div>
         <div className="flex show-on-scroll opacity-0 pic1 justify-center w-full sm:mt-0 my-5">
@@ -77,11 +77,11 @@ export default function BillSplit() {
         </div>
         <button
           onClick={() =>
-            router.push("https://github.com/0xJayden/bill-split-app")
+            router.push("https://testflight.apple.com/join/mDj56o06")
           }
           className="border show-on-scroll pic2 opacity-0 sm:hidden rounded border-[#5adfaa] px-2 transition-all duration-200 ease-out hover:bg-[#5adfaa] hover:text-gray-700"
         >
-          Link to Project
+          Link to App
         </button>
       </div>
       <div className="w-full mt-20 flex justify-center">
