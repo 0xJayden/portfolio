@@ -30,7 +30,7 @@ export default function Home() {
           name="description"
           content="Jayden Davila's Developer Portfolio"
         />
-        <link rel="icon" href="/jd.ico" />
+        <link rel="icon" href="/jdLogo.ico" />
       </Head>
       <span className="h-[1500px] left-1 sm:left-10 w-[2px] bg-gradient-to-b absolute from-transparent via-[#354d4e]"></span>
       <span className="h-[1500px] left-2 sm:left-12 w-[2px] bg-gradient-to-b absolute from-transparent via-[#49354e]"></span>

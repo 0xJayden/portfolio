@@ -47,7 +47,7 @@ export default function EventMarketPlace() {
   return (
     <>
       <div className="sm:flex">
-        <div className="border show-on-scroll info border-[#5adfaa] rounded-lg p-5 sm:max-w-[600px]">
+        <div className="border show-on-scroll opacity-0 info border-[#5adfaa] rounded-lg p-5 sm:max-w-[600px]">
           <h1 style={orbitron.style} className="text-3xl mb-5 ">
             Event Marketplace
           </h1>

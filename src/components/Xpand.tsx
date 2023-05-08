@@ -45,7 +45,7 @@ export default function Xpand() {
   return (
     <>
       <div className="sm:flex">
-        <div className="flex show-on-scroll info flex-col sm:max-h-[350px] sm:max-w-[600px]">
+        <div className="flex show-on-scroll opacity-0 info flex-col sm:max-h-[350px] sm:max-w-[600px]">
           <div className="border border-[#5adfaa] rounded-lg p-5 relative">
             <h1 style={orbitron.style} className="text-3xl mb-5">
               XPAND Sports

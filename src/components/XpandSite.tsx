@@ -46,7 +46,7 @@ export default function EventMarketPlace() {
   return (
     <>
       <div className="sm:flex ">
-        <div className="w-full show-on-scroll info">
+        <div className="w-full opacity-0 show-on-scroll info">
           <div className="border border-[#5adfaa] rounded-lg p-5 relative sm:max-h-[350px] sm:max-w-[600px]">
             <h1 style={orbitron.style} className="text-3xl mb-5 ">
               XPAND Sports
