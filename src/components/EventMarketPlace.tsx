@@ -4,6 +4,9 @@ import empMobile from "../assets/emp-mobile.png";
 import explore from "../assets/explore.png";
 import emp from "../assets/event-market-place.png";
 import { useEffect } from "react";
+import { Orbitron } from "next/font/google";
+
+const orbitron = Orbitron({ subsets: ["latin"] });
 
 export default function EventMarketPlace() {
   const router = useRouter();
@@ -40,11 +43,14 @@ export default function EventMarketPlace() {
     const elements = document.querySelectorAll(".show-on-scroll");
     elements.forEach((el) => observer.observe(el));
   }, []);
+
   return (
     <>
       <div className="sm:flex">
         <div className="border show-on-scroll info border-[#5adfaa] rounded-lg p-5 sm:max-w-[600px]">
-          <h1 className="text-3xl mb-5 ">Event Marketplace</h1>
+          <h1 style={orbitron.style} className="text-3xl mb-5 ">
+            Event Marketplace
+          </h1>
           <h1 className="text-xl mb-5 border-b text-blue-400 border-[#5adfaa]">
             A Marketplace for Events
           </h1>

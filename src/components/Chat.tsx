@@ -5,6 +5,9 @@ import chat2 from "../assets/chat-2.png";
 import chat3 from "../assets/chat-3.png";
 import chat4 from "../assets/chat-app-desktop.png";
 import { useEffect, useState } from "react";
+import { Orbitron } from "next/font/google";
+
+const orbitron = Orbitron({ subsets: ["latin"] });
 
 export default function EventMarketPlace() {
   const [currentPic, setCurrentPic] = useState(0);
@@ -71,7 +74,9 @@ export default function EventMarketPlace() {
       <div className="sm:flex">
         <div className="flex show-on-scroll info opacity-0 flex-col space-y-2 sm:max-h-[350px] sm:max-w-[600px]">
           <div className="border border-[#5adfaa] rounded-lg p-5 relative">
-            <h1 className="text-3xl mb-5 ">Chat App</h1>
+            <h1 style={orbitron.style} className="text-3xl mb-5 ">
+              Chat App
+            </h1>
             <h1 className="text-xl mb-5 border-b text-red-400 border-[#5adfaa]">
               You guessed it, a chat app.
             </h1>

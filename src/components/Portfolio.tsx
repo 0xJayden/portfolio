@@ -4,6 +4,11 @@ import blockchain from "../assets/blockchain.png";
 import app from "../assets/app.png";
 import web from "../assets/web.png";
 import { useRouter } from "next/router";
+import { Source_Code_Pro, Orbitron } from "next/font/google";
+
+const sourceCodePro = Source_Code_Pro({ subsets: ["latin"] });
+
+const orbitron = Orbitron({ subsets: ["latin"] });
 
 type SectionProps = {
   heading: string;
@@ -23,8 +28,10 @@ const Section = ({ heading, subHeading, src, page }: SectionProps) => {
     >
       <div className="absolute top-0 bottom-0 right-0 left-0 bg-black -z-10 opacity-25 rounded-lg"></div>
       <Image className="max-w-[300px] max-h-[200px] w-auto" src={src} alt="" />
-      <div className="space-y-3 text-center">
-        <h1 className="text-4xl">{heading}</h1>
+      <div style={sourceCodePro.style} className="space-y-3 text-center">
+        <h1 style={orbitron.style} className="text-4xl">
+          {heading}
+        </h1>
         <p className="text-[#c6c6c6]">{subHeading}</p>
         <button
           onClick={() => router.push(page)}
@@ -77,7 +84,10 @@ export default function Portfolio() {
       className="flex flex-col mt-[100px] sm:mt-[200px] space-y-20"
     >
       <div className="flex justify-center items-center opacity-0 translate-y-20 transition-all duration-1000 blur-sm show-on-scroll">
-        <h1 className="border-b border-[#f0daff] bg-gradient-to-br from-[#a35adf] via-[#f0c0ff] to-white text-transparent bg-clip-text text-[50px]">
+        <h1
+          style={orbitron.style}
+          className="border-b border-[#f0daff] bg-gradient-to-br from-[#a35adf] via-[#f0c0ff] to-white text-transparent bg-clip-text text-[50px]"
+        >
           Portfolio
         </h1>
       </div>

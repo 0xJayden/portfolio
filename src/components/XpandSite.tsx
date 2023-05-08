@@ -3,6 +3,9 @@ import { useRouter } from "next/router";
 import xpand from "../assets/xpand-site.png";
 import xpandMobile from "../assets/xpand-mobile.png";
 import { useEffect } from "react";
+import { Orbitron } from "next/font/google";
+
+const orbitron = Orbitron({ subsets: ["latin"] });
 
 export default function EventMarketPlace() {
   const router = useRouter();
@@ -45,7 +48,9 @@ export default function EventMarketPlace() {
       <div className="sm:flex ">
         <div className="w-full show-on-scroll info">
           <div className="border border-[#5adfaa] rounded-lg p-5 relative sm:max-h-[350px] sm:max-w-[600px]">
-            <h1 className="text-3xl mb-5 ">XPAND Sports</h1>
+            <h1 style={orbitron.style} className="text-3xl mb-5 ">
+              XPAND Sports
+            </h1>
             <h1 className="text-xl mb-5 border-b text-[#c11616] border-[#5adfaa]">
               {`The website for XPAND Sports, a platform for athletes to monetize their content & connect with
               their fans.`}

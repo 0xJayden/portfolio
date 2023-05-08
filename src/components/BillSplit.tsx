@@ -5,6 +5,9 @@ import billSplit1 from "../assets/bill-split-1.png";
 import billSplit2 from "../assets/bill-split-2.png";
 import billSplit3 from "../assets/bill-split-3.png";
 import billSplit4 from "../assets/bill-split-4.png";
+import { Orbitron } from "next/font/google";
+
+const orbitron = Orbitron({ subsets: ["latin"] });
 
 export default function BillSplit() {
   const router = useRouter();
@@ -47,7 +50,9 @@ export default function BillSplit() {
       <div className="sm:flex">
         <div className="flex show-on-scroll info opacity-0 flex-col sm:max-h-[350px] sm:max-w-[600px]">
           <div className="border border-[#5adfaa] rounded-lg p-5 relative">
-            <h1 className="text-3xl mb-5">Bill Split App</h1>
+            <h1 style={orbitron.style} className="text-3xl mb-5">
+              Bill Split App
+            </h1>
             <h1 className="text-xl mb-5 border-b text-cyan-500 border-[#5adfaa]">
               Split the bill with your peeps.
             </h1>

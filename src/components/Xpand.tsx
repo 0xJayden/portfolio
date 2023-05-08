@@ -2,6 +2,9 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import xpand from "../assets/mobile-front.png";
+import { Orbitron } from "next/font/google";
+
+const orbitron = Orbitron({ subsets: ["latin"] });
 
 export default function Xpand() {
   const router = useRouter();
@@ -44,7 +47,9 @@ export default function Xpand() {
       <div className="sm:flex">
         <div className="flex show-on-scroll info flex-col sm:max-h-[350px] sm:max-w-[600px]">
           <div className="border border-[#5adfaa] rounded-lg p-5 relative">
-            <h1 className="text-3xl mb-5">XPAND Sports</h1>
+            <h1 style={orbitron.style} className="text-3xl mb-5">
+              XPAND Sports
+            </h1>
             <h1 className="text-xl mb-5 border-b text-[#c11616] border-[#5adfaa]">
               {`A platform for athletes to monetize their content & connect with
               their fans.`}

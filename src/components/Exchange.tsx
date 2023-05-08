@@ -2,6 +2,9 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import exchange from "../assets/exchange.png";
+import { Orbitron } from "next/font/google";
+
+const orbitron = Orbitron({ subsets: ["latin"] });
 
 export default function EventMarketPlace() {
   const router = useRouter();
@@ -43,7 +46,9 @@ export default function EventMarketPlace() {
     <>
       <div className="sm:flex">
         <div className="border show-on-scroll opacity-0 info border-[#5adfaa] rounded-lg p-5 relative sm:max-w-[500px]">
-          <h1 className="text-3xl mb-5 ">Portfolio Token Exchange</h1>
+          <h1 style={orbitron.style} className="text-3xl mb-5 ">
+            Portfolio Token Exchange
+          </h1>
           <h1 className="text-xl mb-5 border-b text-purple-400 border-[#5adfaa]">
             Crypto currency exchange
           </h1>
