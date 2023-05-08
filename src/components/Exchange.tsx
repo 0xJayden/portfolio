@@ -3,6 +3,8 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import exchange from "../assets/exchange.png";
 import { Orbitron } from "next/font/google";
+import Link from "next/link";
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
 
 const orbitron = Orbitron({ subsets: ["latin"] });
 
@@ -44,7 +46,7 @@ export default function EventMarketPlace() {
 
   return (
     <>
-      <div className="sm:flex">
+      <div className="sm:flex mb-3">
         <div className="border show-on-scroll opacity-0 info border-[#5adfaa] rounded-lg p-5 relative sm:max-w-[500px]">
           <h1 style={orbitron.style} className="text-3xl mb-5 ">
             Portfolio Token Exchange
@@ -79,23 +81,25 @@ export default function EventMarketPlace() {
             <Image alt="" src={exchange} />
           </div>
         </div>
-        <button
-          onClick={() =>
-            router.push("https://portfolio-token-exchange.surge.sh/")
-          }
-          className="border show-on-scroll pic2 opacity-0 sm:hidden rounded border-[#5adfaa] px-2 transition-all duration-200 ease-out hover:bg-[#5adfaa] hover:text-gray-700"
+        <Link
+          href={"https://psimplemind.com/"}
+          className="border flex items-center justify-center show-on-scroll pic1 opacity-0 sm:hidden rounded border-[#5adfaa] px-2 transition-all duration-200 ease-out hover:bg-[#5adfaa] hover:text-gray-700"
         >
-          Link to Project
-        </button>
+          <p style={orbitron.style} className="text-lg">
+            Go
+          </p>
+          <ArrowRightIcon className="h-5 w-5 ml-1" />
+        </Link>
       </div>
-      <button
-        onClick={() =>
-          router.push("https://portfolio-token-exchange.surge.sh/")
-        }
-        className="border show-on-scroll pic2 opacity-0 sm:inline hidden rounded border-[#5adfaa] px-2 mt-2 transition-all duration-200 ease-out hover:bg-[#5adfaa] hover:text-gray-700"
+      <Link
+        href={"https://portfolio-token-exchange.surge.sh/"}
+        className="border max-w-[100px] sm:justify-center sm:flex sm:items-center hidden rounded border-[#5adfaa] p-2 transition-all duration-200 ease-out hover:bg-[#5adfaa] hover:text-gray-700"
       >
-        Link to Project
-      </button>
+        <p style={orbitron.style} className="text-lg">
+          Go
+        </p>
+        <ArrowRightIcon className="h-5 w-5 ml-1" />
+      </Link>
     </>
   );
 }

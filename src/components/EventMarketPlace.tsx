@@ -5,6 +5,8 @@ import explore from "../assets/explore.png";
 import emp from "../assets/event-market-place.png";
 import { useEffect } from "react";
 import { Orbitron } from "next/font/google";
+import Link from "next/link";
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
 
 const orbitron = Orbitron({ subsets: ["latin"] });
 
@@ -71,7 +73,7 @@ export default function EventMarketPlace() {
           </p>
         </div>
 
-        <div className="flex justify-center show-on-scroll pic1 opacity-0 mt-7 sm:mt-0 sm:w-full">
+        <div className="flex justify-center show-on-scroll pic1 opacity-0 mt-7 mb-5 sm:mt-0 sm:w-full">
           <div className="max-w-[130px] sm:max-w-[200px] -rotate-12">
             <Image alt="" src={empMobile} />
           </div>
@@ -79,19 +81,25 @@ export default function EventMarketPlace() {
             <Image alt="" src={explore} />
           </div>
         </div>
-        <button
-          onClick={() => router.push("https://event-marketplace.vercel.app/")}
-          className="sm:hidden show-on-scroll opacity-0 pic1 border rounded border-[#5adfaa] px-2 mt-5 mb-20 transition-all duration-200 ease-out hover:bg-[#5adfaa] hover:text-gray-700"
+        <Link
+          href={"https://event-marketplace.vercel.app/"}
+          className="border flex items-center justify-center show-on-scroll pic1 opacity-0 sm:hidden rounded border-[#5adfaa] px-2 transition-all duration-200 ease-out hover:bg-[#5adfaa] hover:text-gray-700"
         >
-          Link to Project
-        </button>
+          <p style={orbitron.style} className="text-lg">
+            Go
+          </p>
+          <ArrowRightIcon className="h-5 w-5 ml-1" />
+        </Link>
       </div>
-      <button
-        onClick={() => router.push("https://event-marketplace.vercel.app/")}
-        className="hidden show-on-scroll info sm:inline border rounded border-[#5adfaa] px-2 mt-2 cursor-pointer transition-all duration-200 ease-out hover:bg-[#5adfaa] hover:text-gray-700"
+      <Link
+        href={"https://event-marketplace.vercel.app/"}
+        className="border max-w-[100px] sm:justify-center sm:flex sm:items-center hidden rounded border-[#5adfaa] p-2 transition-all duration-200 ease-out hover:bg-[#5adfaa] hover:text-gray-700"
       >
-        Link to Project
-      </button>
+        <p style={orbitron.style} className="text-lg">
+          Go
+        </p>
+        <ArrowRightIcon className="h-5 w-5 ml-1" />
+      </Link>
       <div className="p-20 pt-10 hidden show-on-scroll pic2 sm:flex">
         <Image alt="" src={emp} />
       </div>

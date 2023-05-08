@@ -17,7 +17,7 @@ export default function Web3() {
       <h1 style={orbitron.style} className="text-5xl py-10 animate-fadeUp2">
         Web 3
       </h1>
-      <div className="space-y-10">
+      <div className="space-y-5">
         <EventMarketPlace />
         <div>
           <Exchange />

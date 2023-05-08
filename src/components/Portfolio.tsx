@@ -106,23 +106,11 @@ export default function Portfolio() {
         />
         <Section
           heading="Websites & Apps"
-          subHeading="Full stack websites & webapps built using Next.js."
+          subHeading="Full stack, responsive websites & webapps built using Next.js."
           src={web}
           page="/websites"
         />
       </div>
-      {/* <div className="opacity-0 translate-y-20 transition-all duration-1000 blur-sm show-on-scroll">
-        <EventMarketPlace />
-      </div>
-      <div className="opacity-0 translate-y-20 transition-all duration-1000 blur-sm show-on-scroll">
-        <Chat />
-      </div>
-      <div className="opacity-0 translate-y-20 transition-all duration-1000 blur-sm show-on-scroll">
-        <BillSplit />
-      </div>
-      <div className="opacity-0 translate-y-20 transition-all duration-1000 blur-sm show-on-scroll">
-        <Exchange />
-      </div> */}
     </div>
   );
 }

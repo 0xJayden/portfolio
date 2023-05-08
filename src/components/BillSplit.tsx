@@ -6,6 +6,8 @@ import billSplit2 from "../assets/bill-split-2.png";
 import billSplit3 from "../assets/bill-split-3.png";
 import billSplit4 from "../assets/bill-split-4.png";
 import { Orbitron } from "next/font/google";
+import Link from "next/link";
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
 
 const orbitron = Orbitron({ subsets: ["latin"] });
 
@@ -49,7 +51,7 @@ export default function BillSplit() {
     <>
       <div className="sm:flex">
         <div className="flex show-on-scroll info opacity-0 flex-col sm:max-h-[350px] sm:max-w-[600px]">
-          <div className="border border-[#5adfaa] rounded-lg p-5 relative">
+          <div className="border mb-3 border-[#5adfaa] rounded-lg p-5 relative">
             <h1 style={orbitron.style} className="text-3xl mb-5">
               Bill Split App
             </h1>
@@ -66,28 +68,30 @@ export default function BillSplit() {
               {`After everyone is accounted for, click on the results button to see everyones individual bill.`}
             </p>
           </div>
-          <button
-            onClick={() =>
-              router.push("https://testflight.apple.com/join/mDj56o06")
-            }
-            className="border hidden sm:inline w-fit rounded border-[#5adfaa] px-2 mt-2 transition-all duration-200 ease-out hover:bg-[#5adfaa] hover:text-gray-700"
+          <Link
+            href={"https://testflight.apple.com/join/mDj56o06"}
+            className="border max-w-[100px] sm:justify-center sm:flex sm:items-center hidden rounded border-[#5adfaa] p-2 transition-all duration-200 ease-out hover:bg-[#5adfaa] hover:text-gray-700"
           >
-            Link to App
-          </button>
+            <p style={orbitron.style} className="text-lg">
+              Go
+            </p>
+            <ArrowRightIcon className="h-5 w-5 ml-1" />
+          </Link>
         </div>
         <div className="flex show-on-scroll opacity-0 pic1 justify-center w-full sm:mt-0 my-5">
           <div className="max-w-[300px] flex justify-center sm:w-full">
             <Image alt="" className="rounded-lg" src={billSplit1} />
           </div>
         </div>
-        <button
-          onClick={() =>
-            router.push("https://testflight.apple.com/join/mDj56o06")
-          }
-          className="border show-on-scroll pic2 opacity-0 sm:hidden rounded border-[#5adfaa] px-2 transition-all duration-200 ease-out hover:bg-[#5adfaa] hover:text-gray-700"
+        <Link
+          href={"https://testflight.apple.com/join/mDj56o06"}
+          className="border flex items-center justify-center show-on-scroll pic1 opacity-0 sm:hidden rounded border-[#5adfaa] px-2 transition-all duration-200 ease-out hover:bg-[#5adfaa] hover:text-gray-700"
         >
-          Link to App
-        </button>
+          <p style={orbitron.style} className="text-lg">
+            Go
+          </p>
+          <ArrowRightIcon className="h-5 w-5 ml-1" />
+        </Link>
       </div>
       <div className="w-full mt-20 flex justify-center">
         <div className="border-t border-[#5adfaa] w-20"></div>
